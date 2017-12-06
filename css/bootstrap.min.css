@@ -44,6 +44,7 @@ a.btn-danger {
 #todoTEST {
     margin: 0 auto;
     width: 100%;
+	padding-left: 10vw;
 }
 
 .btn-circle.btn-lg {
@@ -58,7 +59,6 @@ a.btn-danger {
 ul {
 	font-size: 24px;
 	padding-bottom: 20px;
-	padding-left: 0px;
 }
 
 .taskInTheList {
@@ -83,6 +83,7 @@ li.taskListed {
     float: left;
     overflow: hidden;
     white-space: nowrap;
+    padding-left: 1vw;
 }
 
 li.dateListed {
@@ -91,6 +92,7 @@ li.dateListed {
 	float: left;
 	overflow: hidden;
 	white-space: nowrap;
+	padding-left: 1vw;
 }
 
 li.deleteButton {
@@ -102,6 +104,7 @@ li.deleteButton {
 .expandedInstructions {
 	display: none;
 	font-size: 14px;
+	padding-top: 40px;
 }
 
 /* Decrease modal size by decreasing margin bottom of last element in modal */
@@ -130,12 +133,17 @@ li.deleteButton {
 
 .clearAll {
 	text-align: center;
+	margin-top: 30px;
 }
 
 #tips {
 	font-size: 14px;
 	padding-left: 10px;
 }
+li.important.task-active {
+	color: hsl(80, 100%, 62%);
+}
+
 
 /* all for the navbar colors */
 .navbar-default {
