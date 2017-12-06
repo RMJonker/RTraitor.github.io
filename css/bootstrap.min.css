@@ -123,8 +123,8 @@ li.deleteButton {
 }
 
 .clickableExpand .task-active {
-	background-color: #2c78e585 !important;
-	border-color: #2c78e585 !important;
+	background-color: rgba(44, 120, 229, 0.52) !important;
+	border-color: rgba(44, 120, 229, 0.52) !important;
 }
 
 .clearAll {
