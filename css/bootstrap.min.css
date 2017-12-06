@@ -71,7 +71,6 @@ li.important {
 }
 
 .btn-circle.btn-lg {
-	float: right;
 	margin: 0 auto;
 }
 
@@ -106,6 +105,10 @@ li.deleteButton {
     overflow-y: auto;
 }
 
+.clickableExpand .task-active {
+	background-color: #2c78e585 !important;
+	border-color: #2c78e585 !important;
+}
 
 /* all for the navbar colors */
 .navbar-default {
