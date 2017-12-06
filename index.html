@@ -7,6 +7,7 @@
     <title>To Do List</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap3-modal.css" rel="stylesheet">
   </head>
   <body>
 
@@ -76,7 +77,7 @@
     	<div class='taskInTheList col-xs-8 col-sm-12 col-md-12'>
     		<div class='clickableExpand'>
     			<li class='panel panel-default taskListed'>Example task</li>
-    			<li class='panel panel-default dateListed'>6/12/2017</li>
+    			<li class='panel panel-default dateListed'>05/12/2017</li>
     		</div>
     		<li class='deleteButton'><a href='#' class='btn btn btn-danger' id='testingWithNames' aria-hidden='true'>&times;</a></li>
     		<div class='expandedInstructions'>
@@ -94,7 +95,7 @@
       			</div>
      			<div class="modal-body">
        				<div class="form-group">
-						<label for="task">Task:</label>
+						<label for="task">Task: <i>*required</i></label>
 						<input type="text" class="form-control" id="task" name="taskName" placeholder="Fill in your task">
 					</div>
 
@@ -103,7 +104,7 @@
 	  					<textarea class="form-control" rows="5" id="comment"></textarea>
 					</div>
 
-					<label for="date">Due date task:</label>
+					<label for="date">Due date task: <i>*required</i></label>
 					<div class="form-group input-group date">
 					  	<input type="text" class="form-control" id='date' name='taskDate' data-provide="datepicker" placeholder="Click here to choose the due date"><span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
 					</div>
@@ -132,5 +133,7 @@
 	<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap3-modalmanager.js"></script>
+    <script src="js/bootstrap3-modal.js"></script>
   </body>
 </html>	

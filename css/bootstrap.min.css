@@ -107,6 +107,14 @@ li.deleteButton {
     overflow-y: auto;
 }
 
+.modal-dialog {
+	width: 80%;
+}
+
+#testModal {
+	width: 600px; /* SET THE WIDTH OF THE MODAL */
+	/*margin: -250px 0 0 -450px; /* CHANGE MARGINS TO ACCOMMODATE THE NEW WIDTH (original = margin: -250px 0 0 -280px;) */
+}
 
 .clickableExpand .task-active {
 	background-color: #2c78e585 !important;
