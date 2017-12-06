@@ -61,7 +61,7 @@ ul {
 	padding-left: 0px;
 }
 
-li {
+.taskInTheList {
 	font-size: 18px;
 	padding-top: 0px;
 	padding-bottom: 5px;
@@ -104,6 +104,10 @@ li.deleteButton {
 	font-size: 14px;
 }
 
+/* Decrease modal size by decreasing margin bottom of last element in modal */
+.checkbox {
+	margin-bottom: -10px;
+}
 /* Make modal size scale with window size */
 .modal-body {
     max-height: calc(100vh - 200px);
@@ -122,6 +126,15 @@ li.deleteButton {
 .clickableExpand .task-active {
 	background-color: #2c78e585 !important;
 	border-color: #2c78e585 !important;
+}
+
+.clearAll {
+	text-align: center;
+}
+
+#tips {
+	font-size: 14px;
+	padding-left: 10px;
 }
 
 /* all for the navbar colors */
