@@ -8,10 +8,8 @@ body {
 	background-color: #9EC3F9;
 }
 
-.navbar.navbar-default.navbar-static-top {
+.navbar {
   margin-bottom: 5px;
-  background-color: #3082FC;
-  color: #333;
 }
 
 form {
@@ -72,21 +70,42 @@ li.important {
 	color: red;
 }
 
-span.taskListed {
-
-}
-
-span.dateListed {
-	margin-left: 10em;
-}
-
-span.primary.dateListed {
-	margin-left: 6em;
-}
 .btn-circle.btn-lg {
 	float: right;
 	margin: 0 auto;
 }
+
+li.taskListed {
+	width: 45%;
+	max-width: 45vh;
+    float: left;
+    overflow: hidden;
+}
+
+li.dateListed {
+	width: 45%;
+	max-width: 45vh;
+	float: left;
+	overflow: hidden;
+}
+
+li.deleteButton {
+	width: 10%;
+	max-width: 10vh;
+	float: left;
+}
+
+.expandedInstructions {
+	display: none;
+	font-size: 14px;
+}
+
+/* Make modal size scale with window size */
+.modal-body {
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+}
+
 
 /* all for the navbar colors */
 .navbar-default {

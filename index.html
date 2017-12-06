@@ -58,25 +58,33 @@
     	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
     	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
     	<hr>
-
-    	<!-- ALIGNMENT -->
-    	<p class="text-center">Text</p>
-    	<p class="text-right">Text</p>
-    	<p class="text-left">Text</p>
-    	<p class="text-justify">Text</p>
-    	<p class="text-nowrap">Text</p>
-
-
     </div>
+
     <div class="form-group todolist">
       <h1>To-Do List</h1>
-        </div>
-        <div></div>
-    <ul class="list-unstyled" id="todoTEST"><span class='primary taskListed'>Task:</span> <span class='primary dateListed'>Date: </span></ul>
-
-	<button type="button" class="btn btn-primary btn-circle btn-lg" data-toggle="modal" data-target="#testModal"><i class="glyphicon glyphicon-plus"></i></button>
+    </div>
+    <div></div>
+    <ul class="list-unstyled" id="todoTEST">
+    	<li class='primary taskListed'>Task:</li>
+    	<li class='primary dateListed'>Date: </li>
+    	<li class='primary deleteButton'></li>
+    	<!-- Example element in the list -->
+    	<div class='taskInTheList'>
+    		<div class='clickableExpand'>
+    			<li class='panel panel-default taskListed'>Example task</li>
+    			<li class='panel panel-default dateListed'>6/12/2017</li>
+    		</div>
+    		<li class='deleteButton'><a href='#' class='btn btn btn-danger' id='testingWithNames' aria-hidden='true'>&times;</a></li>
+    		<div class='expandedInstructions'>
+    			<h4>Description of the task:</h4><br>This description can be filled or can be left empty. Clicking on the task toggles the description.
+    		</div>
+    	</div>
+    </ul>
+    
+    <div class='container'>
+		<button type="button" class="btn btn-primary btn-circle btn-lg" data-toggle="modal" data-target="#testModal"><i class="glyphicon glyphicon-plus"></i></button>
+	</div>
 
     <div id="testModal" class="modal fade" tabindex="-1" role="dialog">
   		<div class="modal-dialog" role="document">
@@ -92,17 +100,18 @@
 					</div>
 
 					<div class="form-group">
-	  					<label for="comment">Comment:</label>
+	  					<label for="comment">Description of task:</label>
 	  					<textarea class="form-control" rows="5" id="comment"></textarea>
 					</div>
 
 					<div class="form-group input-group date">
-						<label for="date">Comment:</label>
+						<label for="date">Due date task:</label>
 					  	<input type="text" class="form-control" id='date' name='taskDate' data-provide="datepicker" placeholder="Click here to choose the due date"><span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
 					</div>
 
 					<div class="form-group checkbox">
-					  	<label><input type="checkbox" value="" id="checkboxImportant">Set as Important</label>
+					  	<label for='checkboxImportant'>Set as Important: </label>
+					  	<input type="checkbox" value="" id="checkboxImportant" data-toggle='toggle'>
 					</div>
       			</div>
       			<div class="modal-footer">
@@ -119,6 +128,10 @@
     <!-- Include Date Range Picker -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+	<!-- Include Toggle -->
+	<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+	<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
     <script src="js/bootstrap.min.js"></script>
   </body>
-</html>
+</html>	
