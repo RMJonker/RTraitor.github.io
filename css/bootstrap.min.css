@@ -27,10 +27,6 @@ form {
 .form-group {
     padding-bottom: 25px;
 }
-#todo {
-    margin: 0 auto;
-    width: 100%;
-}
 
 a.close {
 	text-align: right;
@@ -44,7 +40,7 @@ a.btn-danger {
 #todoTEST {
     margin: 0 auto;
     width: 100%;
-	padding-left: 10vw;
+	padding-left: calc(25vw - 100px);
 }
 
 .btn-circle.btn-lg {
