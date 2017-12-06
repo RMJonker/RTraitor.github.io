@@ -79,6 +79,7 @@ li.taskListed {
 	max-width: 45vh;
     float: left;
     overflow: hidden;
+    white-space: nowrap;
 }
 
 li.dateListed {
@@ -86,6 +87,7 @@ li.dateListed {
 	max-width: 45vh;
 	float: left;
 	overflow: hidden;
+	white-space: nowrap;
 }
 
 li.deleteButton {
@@ -104,6 +106,7 @@ li.deleteButton {
     max-height: calc(100vh - 200px);
     overflow-y: auto;
 }
+
 
 .clickableExpand .task-active {
 	background-color: #2c78e585 !important;
