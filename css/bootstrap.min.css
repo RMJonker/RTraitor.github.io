@@ -140,6 +140,9 @@ li.important.task-active {
 	color: hsl(80, 100%, 62%);
 }
 
+#clearListButton {
+	margin-bottom: 20px;
+}
 
 /* all for the navbar colors */
 .navbar-default {
